@@ -1,0 +1,78 @@
+# {
+#   events {
+#     _id
+#     title
+#     description
+#     date
+#     creator {
+#       email
+#     }
+#   }
+# }
+
+# mutation {
+#   createEvent(eventInput: {
+#     title: "London Event", 
+#     description: "Code event", 
+#     price: 50.50, 
+#     date: ""
+#   }) {
+#     title
+#     description
+#   }
+# }
+
+# mutation {
+#   createUser(userInput: {email: "yash@gm.com", password: "123456789"}) {
+#     email
+#   }
+# }
+
+# query {
+#   events {
+#     _id
+#     title
+#     date
+#     description
+#     price
+#     creator {
+#       email
+#       _id
+#     } 
+#   }
+# }
+
+# mutation{
+#   bookEvent(eventId: "62f7c5fca90643fe88a7996f"){
+#     _id
+#     createdAt
+#     updatedAt
+#     event{
+#       title
+#       creator{
+#         email
+#       }
+#     }
+#   }
+# }
+
+
+# query{
+#   bookings{
+#     _id
+#     createdAt
+#     updatedAt
+#     event{
+#     	title
+#     }
+#     user{
+#       email
+#     }
+#   }
+# }
+
+# mutation{
+#   cancelBooking(bookingId: "62f7a2798dd70106d451f228"){
+#     title
+#   }
+# }

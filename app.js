@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 
 const graphQlBuildSchema = require('./graphql/schema/index');
 const graphQlResolvers = require('./graphql/resolvers/index');
+const isAuth = require('./middleware/isAuth');
 
 const app = express();
 app.use(bodyParser.json());
@@ -17,6 +18,8 @@ const DB = process.env.MONGO_URL.replace(
 )
   .replace('<PASSWORD>', process.env.MONGO_PASSWORD)
   .replace('<DATABASE>', process.env.MONGO_DATABASE_NAME);
+
+app.use(isAuth);
 
 app.use(
   '/graphql',
