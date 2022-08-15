@@ -1,4 +1,4 @@
-# GraphQL + React API
+# GraphQL + React NodeAPI
 
 # Usage
 
