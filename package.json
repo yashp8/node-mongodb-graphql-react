@@ -12,6 +12,7 @@
     "bcrypt": "^5.0.1",
     "body-parser": "^1.20.0",
     "cd": "^0.3.3",
+    "dataloader": "^2.1.0",
     "dotenv": "^16.0.1",
     "eslint": "^8.20.0",
     "eslint-config-airbnb": "^19.0.4",
