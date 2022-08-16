@@ -1,6 +1,9 @@
+// const Dataloader = require('dataloader');
 const Event = require('../../models/event');
 const User = require('../../models/user');
 const { dateToString } = require('../../helpers/date');
+
+// const eventLoader = new Dataloader((eventIds) => events(eventIds));
 
 const transformEvent = (event) => ({
   ...event._doc,
